@@ -139,6 +139,78 @@
                       </div>
                     </div>
 
+                    <!-- 数据结构与算法 - 带三级菜单 -->
+                    <div class="relative group/submenu">
+                      <NuxtLink
+                        to="/tech-notes/algorithms"
+                        class="dropdown-item flex items-center px-5 py-5 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-blue-50/90 dark:hover:bg-blue-900/30 transition-all duration-500 rounded-2xl group/item transform hover:translate-x-3 hover:scale-105"
+                      >
+                        <div
+                          class="w-2 h-2 bg-indigo-500 rounded-full mr-4 group-hover/item:scale-200 group-hover/item:bg-indigo-600 transition-all duration-500 group-hover/item:shadow-lg group-hover/item:shadow-indigo-500/50"
+                        ></div>
+                        <div class="flex-1">
+                          <div class="font-medium text-base leading-tight">
+                            数据结构与算法
+                          </div>
+                          <div
+                            class="text-sm text-gray-500 dark:text-gray-400 mt-0.5"
+                          >
+                            算法基础与实现
+                          </div>
+                        </div>
+                        <svg
+                          class="w-4 h-4 text-gray-400 group-hover/item:text-indigo-500 group-hover/item:translate-x-1 transition-all duration-300"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                      </NuxtLink>
+
+                      <!-- 三级菜单 -->
+                      <div
+                        class="absolute left-full top-0 ml-2 w-64 bg-white dark:bg-gray-900 backdrop-blur-2xl rounded-2xl shadow-xl border border-gray-300 dark:border-gray-600 opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-500 ease-out transform translate-x-4 scale-95 group-hover/submenu:translate-x-0 group-hover/submenu:scale-100 z-60"
+                      >
+                        <div class="p-4">
+                          <div class="space-y-1">
+                            <NuxtLink
+                              to="/tech-notes/algorithms/data-structures"
+                              class="flex items-center px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50/80 dark:hover:bg-indigo-900/20 rounded-lg transition-all duration-300"
+                            >
+                              <div
+                                class="w-1.5 h-1.5 bg-indigo-400 rounded-full mr-3"
+                              ></div>
+                              数据结构
+                            </NuxtLink>
+                            <NuxtLink
+                              to="/tech-notes/algorithms/sorting"
+                              class="flex items-center px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50/80 dark:hover:bg-indigo-900/20 rounded-lg transition-all duration-300"
+                            >
+                              <div
+                                class="w-1.5 h-1.5 bg-indigo-400 rounded-full mr-3"
+                              ></div>
+                              排序算法
+                            </NuxtLink>
+                            <NuxtLink
+                              to="/tech-notes/algorithms/searching"
+                              class="flex items-center px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50/80 dark:hover:bg-indigo-900/20 rounded-lg transition-all duration-300"
+                            >
+                              <div
+                                class="w-1.5 h-1.5 bg-indigo-400 rounded-full mr-3"
+                              ></div>
+                              搜索算法
+                            </NuxtLink>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <!-- 服务端开发 -->
                     <NuxtLink
                       to="/tech-notes/backend"
